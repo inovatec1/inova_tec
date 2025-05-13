@@ -1,0 +1,200 @@
+<!DOCTYPE html> <html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desarrollo</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Corregido */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 3px solid red; /* Borde rojo para todas las imágenes */
+    max-width: 100%; /* Para que las imágenes sean responsivas */
+    height: auto; /* Para mantener la proporción de las imágenes responsivas */
+}
+
+div { /* Estilo general para divs, ten en cuenta que .text-section es un div y heredará esto */
+    padding: 1%;
+    background-color: #ffefe1;
+    color: #000000; /* Corregido */
+    width: 100%; /* Considera si esto es siempre necesario, box-sizing: border-box; puede ser útil */
+    box-sizing: border-box; /* Para que el padding y border no aumenten el width total */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% auto; /* 'auto' es más flexible que un % fijo para el resto */
+    border: 3px solid #bc0606; /* Rojo */
+}
+
+.grid-container > div {
+    border: 2px solid #bc0606; /* Rojo */
+    /* height:350px; Considera si una altura fija es necesaria o si el contenido debe definirla */
+    padding: 15px; /* Añadido padding interno */
+}
+
+.aliniacion { /* Esta clase no se estaba usando, pero la dejo por si la necesitas */
+    padding: 160px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Más responsivo */
+    gap: 10px; /* Espacio entre elementos del grid */
+}
+
+.grid-container2 > div {
+    border: 2px solid #000000; /* Negro, corregido */
+    /* height:350px; Misma consideración sobre altura fija */
+    padding: 15px; /* Añadido padding interno */
+}
+
+h1 {
+    color: #c33b80;
+    text-align: center;
+}
+
+h2 {
+    color: #f16b19;
+    line-height: 1.6;
+}
+
+p {
+    color: #000000; /* Corregido y simplificado */
+    line-height: 1.6;
+    margin-bottom: 1em; /* Espacio después de los párrafos */
+}
+
+#carousel img { /* Estilos específicos para la imagen del carrusel */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    transition: all 0.3s ease;
+    /* El borde rojo general de 'img' se aplicará. Si quieres uno diferente aquí, especifícalo */
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-section {
+    border: 2px solid red; /* Borde rojo para divisiones de texto */
+    padding: 20px;       /* Padding para que el contenido no toque el borde */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fcf5ed; /* Un color de fondo ligeramente diferente para estas secciones, opcional */
+    /* Este div tomará el width:100% y background-color:#ffefe1 del 'div' general
+       a menos que se sobreescriba aquí, como el padding o margin. */
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div style="background-color:#f16b19;"> <div style="text-align: center;"> <h1 style="color:#e2cc0e; margin-top: 0; margin-bottom: 10px;">TEPACHOLTEPETL</h1>
+            <img src="LOGO.png" alt="Logo de Tepacholtepetl" height="100">
+        </div>
+    </div>
+    <div style="padding: 0;"> <img src="banner.png" alt="Descripción de la nueva imagen"
+<p>Instituto Tecnologico de México<p/>
+<p>Creado por:</p>
+<p>Fatima Corona IGEM</p>
+<p>Valeria Corona IGEM</p>
+<p>Esperanza Garcia IGEM</p>
+<p>Carlos Angeles ITIC</p>
+<p>Jesus Jimenez ITIC</p>
+<p style="text-align: left;"> Av. del Rosal 89, Tepeaca, Álvaro Obregón, 01550 Ciudad de México, CDMX.</p>
+
+        </div>
+</div>
+
+<div class="text-section">
+    <h2>¿QUIÉNES SOMOS?</h2>
+    <p>Somos el corazón creativo detrás de Tepacholtepetl, un proyecto nacido de la pasión por la transformación y la profunda conciencia de nuestro impacto ambiental. Nos dedicamos a insuflar nueva vida a las modestas tapas de botella, rescatándolas del desecho para convertirlas en accesorios únicos y llenos de carácter. En Tepacholtepetl, creemos firmemente en el poder del upcycling y la reutilización como caminos esenciales hacia un futuro más sostenible. Con dedicación e imaginación, tejemos historias a través de cada pieza, ofreciendo expresiones artísticas que todos pueden.</p>
+</div>
+
+<div class="text-section">
+    <h2>OBJETIVO</h2>
+    <p>Ambiental: Ofrecer una segunda oportunidad al reciclaje del plástico, reduciendo la cantidad de residuos que contaminan el medio ambiente y promoviendo la conciencia sobre la importancia de la reutilización.
+Creativo y Cultural: Fomentar la expresión artística y la identidad mexicana a través de la creación de bisutería y accesorios únicos y originales, inspirados en la riqueza cultural del país.
+Efecto Positivo en la Categoría Aplicable (Moda Sostenible y Accesorios Eco-Conscientes).</p>
+</div>
+
+<div class="text-section">
+    <h2>NUESTRO PROCESO</h2>
+    <ul>
+        <li><p>Nuestra técnica de solución se centra en la reutilización creativa y artesanal de tapas de botellas de plástico y metal para transformarlas en aretes únicos y atractivos. Este enfoque aborda la problemática de la contaminación por residuos plásticos a través de un proceso que añade valor estético y funcional a un material de desecho.</p></li>
+        <li><p>Los pasos clave de nuestra técnica de solución incluyen: Recolección y Clasificación: Establecemos un sistema para la recolección de tapas de botellas, ya sea a través de campañas de concientización, colaboraciones con negocios locales (restaurantes, bares, etc.), o la participación de la comunidad. Una vez recolectadas, las tapas se clasifican por material (plástico, metal), tamaño y color para facilitar su posterior selección y diseño.</p></li>
+        <li><p>Limpieza y Preparación: Las tapas recolectadas se someten a un proceso de limpieza exhaustivo para eliminar cualquier residuo o impureza. Dependiendo del diseño deseado, algunas tapas pueden requerir una preparación adicional, como lijado suave para mejorar la adherencia de pinturas o barnices, o la eliminación de bordes afilados para garantizar la seguridad del usuario.</p></li>
+        <li><p>Diseño y Creación: Esta es la etapa central de la técnica. Se exploran diversas posibilidades de diseño para los aretes, aprovechando la variedad de colores y formas de las tapas. Las técnicas de creación pueden incluir: Ensamblaje directo: Unir varias tapas mediante pegamento resistente, alambre fino, o pequeños conectores metálicos para formar figuras o patrones.</p></li>
+        <li><p>Transformación con pintura y acabados: Aplicar pintura acrílica, esmalte de uñas u otras técnicas de coloración para crear diseños personalizados sobre la superficie de las tapas. Se pueden añadir detalles con marcadores permanentes o pequeños adhesivos. Finalmente, se aplica un barniz protector para asegurar la durabilidad del diseño.</p></li>
+    </ul>
+</div>
+
+<div id="carousel" style="text-align: center;" class="text-section"> <h2>ALGO DE NUESTRO TRABAJO</h2>
+    <img id="carousel-image" src="imagen1.jpg" alt="Imagen 1 del carrusel" width="400" style="border: 2px solid red; display: block; margin-left:auto; margin-right:auto;"> <br>
+    <button id="next-btn">Siguiente</button>
+</div>
+
+<div class="text-section">
+    <h2>MISIÓN</h2>
+    <p>Nos dedicamos a transformar residuos plásticos en accesorios únicos, ofreciendo aretes artesanales elaborados con tapas recicladas, que promuevan la conciencia ecológica, el emprendimiento juvenil y el consumo responsable en nuestra comunidad.</p>
+</div>
+
+<div class="text-section">
+    <h2>VISIÓN</h2>
+    <p>Tepacholtepetl es un faro de innovación sostenible en el mundo de la joyería. Su visión central es transformar los desechos plásticos, específicamente tapas y botellas, en piezas de belleza única y significativa, demostrando que la conciencia ambiental y el estilo personal pueden coexistir armoniosamente dedicando técnicas innovadoras, busca resaltar la textura, el color y la forma inherentes de estos materiales, convirtiéndolos en elementos estéticos sorprendentes.</p>
+</div>
+
+<div class="text-section">
+    <h2>NUESTROS VALORES</h2>
+    <p>Responsabilidad Ambiental: Este es el valor central. La marca demuestra un compromiso activo con la reducción de la contaminación plástica, la conservación de recursos naturales y la promoción de prácticas sostenibles en toda su cadena de valor. Revalorización de Residuos: La marca cree en el potencial de transformar lo que se considera desecho en algo valioso y hermoso. Este valor destaca la creatividad y la innovación en la búsqueda de soluciones para los problemas ambientales. Innovación y Creatividad: La marca explora continuamente nuevas formas de transformar el plástico reciclado en diseños originales y atractivos, demostrando que la sostenibilidad no limita la creatividad, sino que la impulsa. Belleza con Propósito: La marca demuestra que la estética y la sostenibilidad pueden ir de la mano, ofreciendo joyas hermosas que además tienen un impacto positivo en el planeta. Comunidad y Colaboración: La marca puede fomentar la creación de una comunidad de personas comprometidas con la sostenibilidad y buscar colaboraciones con otras organizaciones o artistas con valores similares.</p>
+</div>
+
+<div class="text-section">
+    <h2>Consulta más información aquí:</h2>
+
+<p>Página web: <a href="https://sedema.cdmx.gob.mx/programas/programa/reciclatron">https://sedema.cdmx.gob.mx/programas/programa/reciclatron</a></p>
+        <p>Página web: <a href="https://sedema.cdmx.gob.mx/">https://sedema.cdmx.gob.mx/</a></p>
+        <p>Correo electrónico: <a href="mailto:atencionciudadana@sedema.cdmx.gob.mx">atencionciudadana@sedema.cdmx.gob.mx</a></p>
+
+    
+
+
+</div>
+
+
+
+<script>
+const images = [
+    "imagen1.jpg",
+    "imagen2.jpg",
+    "imagen3.jpg",
+    "imagen4.jpg",
+    "imagen5.jpg",
+    "imagen6.jpg",
+    "imagen7.jpg",
+];
+
+let currentIndex = 0;
+const imageElement = document.getElementById("carousel-image");
+const nextBtn = document.getElementById("next-btn");
+
+// Asegurarse de que los elementos existen antes de añadir el listener
+if (imageElement && nextBtn) {
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        imageElement.src = images[currentIndex];
+        imageElement.alt = `Imagen ${currentIndex + 1} del carrusel`; // Actualizar alt text
+    });
+}
+</script>
+</body>
+</html>
